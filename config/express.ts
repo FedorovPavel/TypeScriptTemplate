@@ -1,11 +1,11 @@
 import { Config } from './config';
-import express = require('express');
-import glob = require('glob');
+import express from 'express';
+import glob from 'glob';
 
-import logger = require('morgan');
-import cookieParser = require('cookie-parser');
-import bodyParser = require('body-parser');
-import methodOverride = require('method-override');
+import logger from 'morgan';
+import cookieParser from 'cookie-parser';
+import bodyParser from 'body-parser';
+import methodOverride from 'method-override';
 
 export = (app: express.Application, config: Config): express.Application => {
     const env = process.env.NODE_ENV || 'development';
